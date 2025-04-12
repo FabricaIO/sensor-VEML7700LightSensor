@@ -6,7 +6,7 @@
 	"repository":
 	{
 	  "type": "git",
-	  "url": "https://github.com/FabricaIO/sensor-AdafruitVEML7700.git"
+	  "url": "https://github.com/FabricaIO/sensor-VEML7700LightSensor.git"
 	},
 	"authors":
 	[
