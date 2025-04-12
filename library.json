@@ -1,0 +1,51 @@
+{
+	"name": "sensor-VEML7700LightSensor",
+	"version": "0.5.0",
+	"description": "VEML7700 Ambient light sensor",
+	"keywords": "Fabrica-IO, sensor, light",
+	"repository":
+	{
+	  "type": "git",
+	  "url": "https://github.com/FabricaIO/sensor-AdafruitVEML7700.git"
+	},
+	"authors":
+	[
+	  {
+		"name": "Sam Groveman",
+		"email": "SamGroveman@outlook.com",
+		"url": "https://github.com/FabricaIO"
+	  }
+	],
+	"dependencies": {
+		"Sparkfun VEML7700 Arduino Library": "sparkfun/SparkFun VEML7700 Arduino Library @ ^1.0.0"
+	  },
+	"license": "GPLv3",
+	"homepage": "https://github.com/FabricaIO",
+	"frameworks": "arduino",
+	"platforms": "*",
+	"fabrica-io" : {
+		"name": "LightSensor",
+		"type": 0,
+		"category": "Environment Sensor",
+		"libname": "VEML7700LightSensor",
+		"includes": ["VEML7700LightSensor"],
+		"description": "A sensor that measures ambient light",
+		"constructor":
+		[
+			[
+				{
+					"name": "I2C_bus",
+					"type": "TwoWire*",
+					"description": "The I2C bus the sensor is connected to",
+					"default": "&Wire"
+				},
+				{
+					"name": "configFile",
+					"type": "String",
+					"description": "The name of the config file",
+					"default": "VEML7700LightSensor.json"
+				}
+			]
+		]
+	}
+  }
