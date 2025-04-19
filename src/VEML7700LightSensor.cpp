@@ -150,7 +150,7 @@ String VEML7700LightSensor::getConfig() {
 	doc["Integration"]["options"][5] = "800ms";
 	doc["Persistence"]["current"] = sensor_config.persistence;
 	doc["Persistence"]["options"][0] = "1";
-	doc["Persistence"]["options"][2] = "2";
+	doc["Persistence"]["options"][1] = "2";
 	doc["Persistence"]["options"][2] = "4";
 	doc["Persistence"]["options"][3] = "8";
 	doc["luxCompensation"] = sensor_config.luxCompensation;
@@ -203,7 +203,7 @@ bool VEML7700LightSensor::setConfig(String config, bool save) {
 	}
 	
 	if (save) {
-		if (!saveConfig(config_path, getConfig())) {
+		if (!saveConfig(config_path, config)) {
 			return false;
 		}
 	}
