@@ -23,7 +23,7 @@
 	"homepage": "https://github.com/FabricaIO",
 	"frameworks": "arduino",
 	"platforms": "*",
-	"fabrica-io" : {
+	"fabricaio" : {
 		"name": "LightSensor",
 		"type": 0,
 		"category": "Environment Sensor",
