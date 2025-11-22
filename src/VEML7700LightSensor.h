@@ -16,6 +16,7 @@
 #include <SparkFun_VEML7700_Arduino_Library.h> 
 #include <map>
 
+/// @brief Device for interfacing with the VEML7700 I2C sensor
 class VEML7700LightSensor : public Sensor {
 	public:
 		VEML7700LightSensor(String Name, TwoWire* I2C_bus = &Wire, String configFile = "VEML7700LightSensor.json");
